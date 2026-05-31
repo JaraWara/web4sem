@@ -1,1 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анализ текста — ЛР 8</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div>
+          <h1 class="header__title">Анализатор текста</h1>
+          <div class="header__meta">Лабораторная работа 8</div>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <main class="main">
+    <div class="container">
+      <section class="card">
+        <h2>Введите текст для анализа</h2>
+
+        <form action="result.php" method="post" class="form">
+          <label class="form__label" for="data">Текст</label>
+          <textarea
+            class="form__textarea"
+            name="data"
+            id="data"
+            rows="12"
+            placeholder="Введите русский или английский текст..."
+          ></textarea>
+
+          <div class="form__actions">
+            <button class="button" type="submit">Анализировать</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>Страница ввода текста</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
